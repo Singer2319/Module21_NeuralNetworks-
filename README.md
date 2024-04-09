@@ -1,7 +1,7 @@
 # Module21_Neural_Networks
-# A report on the performance of the deep learning model you created for Alphabet Soup.
+## A report on the performance of the deep learning model you created for Alphabet Soup.
 
-# Overview of the analysis
+## Overview of the analysis
 The purpose of this analysis is to create a model that helps it select the applicants for funding with the best chance of success in their ventures. That way, Alphabet Soup can focus funding on ventures that will prove successful.
 
 Data Preprocessing
