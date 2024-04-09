@@ -6,13 +6,22 @@ The purpose of this analysis is to create a model that helps it select the appli
 
 ### Data Preprocessing
 #### What variable(s) are the target(s) for your model?
-Target variable, or y value, is "IS SUCCESSFUL" or the boolean yes/no that a project was successful or not
+The target variable, or y value, for the model is: is "IS_SUCCESSFUL" or the boolean yes/no that a project was successful or not
+The model is to predict (y) if the campaign was successful or not.
 
-What variable(s) are the features for your model?
-What variable(s) should be removed from the input data because they are neither targets nor features?
-Compiling, Training, and Evaluating the Model
+#### What variable(s) are the features for your model?
+The features, or x values, are, "APPLICATION_TYPE", "AFFILIATION", "CLASSIFICATION", "USE_CASE", "ORGANIZATION", "STATUS", "INCOME_AMT", "SPECIAL_CONSIDERATIONS", and "ASK_AMT" 
+Based on these x values, the model will try to predict how each x bears change on y
 
-How many neurons, layers, and activation functions did you select for your neural network model, and why?
+#### What variable(s) should be removed from the input data because they are neither targets nor features?
+Perhaps "APPLICATION_TYPE" and "CLASSIFICATION" should be removed as the other columns might have enough weight to cause change in y. This is categorical data, but also doesn't tell much about the application. It also has several different options to be categorized under, but not much to say.
+Meanwhile, another column such as "AFFILIATION" might be a useful feature. This is because independent (or, unsupported) ventures might struggle more to be successful than a company sponsored venture.
+
+### Compiling, Training, and Evaluating the Model
+
+#### How many neurons, layers, and activation functions did you select for your neural network model, and why?
+Considering there were several categorical fields (that then were converted to binary), the model ended up with two activation functions and two layers with 80 and 30 neurons each. 
+
 Were you able to achieve the target model performance?
 What steps did you take in your attempts to increase model performance?
 Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
