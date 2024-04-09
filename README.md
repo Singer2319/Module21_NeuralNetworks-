@@ -1,11 +1,11 @@
 # Module21_Neural_Networks
-### A report on the performance of the deep learning model you created for Alphabet Soup.
+## A report on the performance of the deep learning model you created for Alphabet Soup.
 
 ## Overview of the analysis
 The purpose of this analysis is to create a model that helps it select the applicants for funding with the best chance of success in their ventures. That way, Alphabet Soup can focus funding on ventures that will prove successful.
 
 ## Data Preprocessing
-## What variable(s) are the target(s) for your model?
+### What variable(s) are the target(s) for your model?
 Target variable, or y value, is "IS SUCCESSFUL" or the boolean yes/no that a project was successful or not
 
 What variable(s) are the features for your model?
